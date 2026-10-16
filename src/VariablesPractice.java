@@ -1,4 +1,7 @@
 public class VariablesPractice {
+    // mainはプログラムの実行開始地点
+    // String[] argsは起動時に渡される文字列の配列
+    // main内ではintやbooleanなど、別の型の変数も自由に宣言できる
     public static void main(String[] args) {
 
         // 整数型
