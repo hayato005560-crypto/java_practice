@@ -4,6 +4,7 @@ public class ArrayPractice {
         doubleNumbers();
         printEvenIndexValues();
         printSelectedNumbers();
+        initializeNumbers();
     }
 
     public static void printNumbers() {
@@ -45,6 +46,36 @@ public class ArrayPractice {
             } else {
                 if (numbers[i] % 2 == 0) {
                     System.out.println(numbers[i]);
+                }
+            }
+        }
+    }
+
+    // 配列初期化、参照元をインデックスで指定するのか、値で指定するのか、間違えやすいので注意
+    public static void initializeNumbers() {
+        int[] numbers = new int[20];
+        boolean first = true;
+
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = i * 5;
+
+            if (i <= 10) {
+                if (numbers[i] % 2 != 0) {
+                    if (!first) {
+                        System.out.print(",");
+                    }
+                    
+                    System.out.print(numbers[i]);
+                    first = false;
+                }  
+            } else {
+                if (numbers[i] % 2 == 0) {
+                    if (!first) {
+                        System.out.print(",");
+                    }
+                    
+                    System.out.print(numbers[i]);
+                    first = false;
                 }
             }
         }
