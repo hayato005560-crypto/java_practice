@@ -7,6 +7,6 @@ public class Lesson1 {
         double total = subtotal * (1 + taxRate);
         
         System.out.println("税抜価格: " + subtotal + "円");
-        System.out.printf("税込価格: %.1f円%n", total);
+        System.out.printf("税込価格: %.1f円%n", total);//%.1fは小数点以下1桁まで表示するフォーマット指定子、%nは改行を意味するフォーマット指定子
     }
 }

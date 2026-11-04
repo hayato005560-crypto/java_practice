@@ -13,7 +13,9 @@ public class Lesson2 {
         double discountedTotal = total * (1 - discountRate);
         
         System.out.println("購入金額: " + total + "円");
-        System.out.printf("割引率: %.0f%%%n", discountRate * 100);
+        System.out.printf("割引率: %.0f%%%n", discountRate * 100); 
+        // %.0fは小数点以下0桁まで表示するフォーマット指定子、%nは改行を意味するフォーマット指定子
         System.out.printf("割引後金額: %.1f円%n", discountedTotal);
+        // %.1fは小数点以下1桁まで表示するフォーマット指定子、%nは改行を意味するフォーマット指定子
     }
 }
